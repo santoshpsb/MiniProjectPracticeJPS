@@ -49,7 +49,7 @@ public class BankService {
 
     
     public void processMonthlyEnd() {
-        System.out.println("\n--- Processing End of Month Fees/Interest ---");
+        System.out.println("\n Processing End of Month Fees/Interest ");
         
         for (Account acc : accountDatabase.values()) {
             acc.applyMonthlyFees(); 

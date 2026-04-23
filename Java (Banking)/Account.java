@@ -69,7 +69,7 @@ public abstract class Account implements BankOperations {
 
     @Override
     public void showHistory() {
-        System.out.println("\n--- Transaction History for " + accountHolder + " ---");
+        System.out.println("\n Transaction History for " + accountHolder );
         
         int totalTransactions = history.size();
         
@@ -86,7 +86,7 @@ public abstract class Account implements BankOperations {
         for (int i = start; i < totalTransactions; i++) {
             System.out.println(history.get(i).toString());
         }
-        System.out.println("--------------------------------------------------");
+        System.out.println("\n");
     }
 
     public abstract void applyMonthlyFees();
